@@ -1,19 +1,20 @@
 import './App.css'
-import PersonaCard from './components/PersonaCard';
-import NavMenu from './components/NavMenu';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import CV from "./pages/CV";
 
-function App() {
-  const options = ["Option 1", "Option 2", "Option 3"]
+export default function App() {
   return (
-    <>
-    <body>
-    <div>
-      <NavMenu options={options}/>
-        <PersonaCard/>
-      </div>
-    </body>
-    </>
-  )
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/CV" element={<CV />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Skills" element={<Skills />} />
+          <Route element={<h1>Not found!</h1>} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
-
-export default App
