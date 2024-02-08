@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/contactbtn.css';
 
 const ContactMe: React.FC = () => {
     return (

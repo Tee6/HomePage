@@ -1,0 +1,53 @@
+.dropdown-buttondiv{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: fixed;
+    top: 60px; /* Abstand vom oberen Rand */
+    left: 20px; /* Abstand vom linken Rand */
+    width: 10%;
+  
+    background-color: #1A1A1A;
+    border-radius: 5px;
+    height: 175px;
+  }
+  
+  .dropdownmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 20px; /* Abstand vom oberen Rand */
+    left: 20px; /* Abstand vom linken Rand */
+    width: 10%;
+  }
+  
+  .category-btn{
+    padding: 10px 20px; /* Innenabstand des Buttons */
+    border: none; /* Keine Rahmen um den Button */
+    border-radius: 5px; /* Abrundung des Button-Rahmens */
+    font-size: 16px; /* Schriftgröße des Buttons */
+    cursor: pointer; /* Zeige den Cursor als Zeiger an */
+    width: 100%;
+  }
+  
+  .dropdown-animation{
+    animation: dropdown-animation 0.3s ease-out 0s 1 normal forwards;
+  }
+  
+  @keyframes dropdown-animation {
+      0% {
+          opacity: 0;
+          transform: translateY(-250px);
+      }
+  
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  .dropdown-btn{
+    border-radius: 0px;
+    width: 100%;
+  }

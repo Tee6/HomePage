@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import '../styles/dropdown.css'
 
 function DropDownMenu(){
     const [showMenu, setShowMenu] = useState(false);

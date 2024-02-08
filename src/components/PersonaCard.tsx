@@ -14,7 +14,7 @@ import {faVuejs} from "@fortawesome/free-brands-svg-icons";
 function GlassCard(){
     
     return (
-    <div className="glassCard">
+    <div className="glassCard persona-card">
         <div className="card">
             <div className="card-image">
                 <img className="portrait-img" src="src\assets\Portrait.png" alt="Portrait" />

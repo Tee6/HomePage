@@ -1,7 +1,10 @@
-import './App.css'
+import './styles/App.css'
+import './styles/glassmorphism.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import CV from "./pages/CV";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
 
 export default function App() {
   return (
