@@ -6,7 +6,7 @@ function CVentryCard({entry}: {entry: CVentry}){
     return(
         <div className="glassCard card cv-entry-card">
             <a className="cv-image" href={entry.link} target="_blank">
-                <img className="cv-image" src={entry.picture} alt={entry.title} />
+                <img className="cv-image" src={import.meta.env.BASE_URL + entry.picture} alt={entry.title} />
                 </a>
             <div className="cv-content">
                 <p className="cv-paragraph cv-title">{entry.title}</p>
@@ -16,7 +16,6 @@ function CVentryCard({entry}: {entry: CVentry}){
                 {isLearnMoreNotEmpty && (
                     <a href={entry.learnMore}>Mehr Erfahren</a>
                 )}
-
             </div>
         </div>
     )
