@@ -14,7 +14,7 @@ function DropDownMenu(){
             </button>
             {showDropdown && (
                 <div className='dropdown-buttondiv dropdown-animation'>
-                    <button onClick={() => navigate("/")} className='dropdown-animation dropdown-btn'>Home</button>
+                    <button onClick={() => navigate("/HomePage")} className='dropdown-animation dropdown-btn'>Home</button>
                     <button onClick={() => navigate("/CV")} className='dropdown-animation dropdown-btn'>CV</button>
                     <button onClick={() => navigate("/Projects")} className='dropdown-animation dropdown-btn'>Projects</button>
                     <button onClick={() => navigate("/Skills")} className='dropdown-animation dropdown-btn'>Skills</button>
