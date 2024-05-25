@@ -6,6 +6,7 @@ export type CVentry = {
     description: string;
     picture: string;
     link: string;
+    learnMore?: string;
   }
   export type Projectentry = {
     title: string;
@@ -13,6 +14,7 @@ export type CVentry = {
     description: string;
     picture: string;
     link: string;
+    learnMore?: string;
   }
   
 type CVStore = {
@@ -62,6 +64,16 @@ const useCVStore = create<CVStore>(() => ({
         link: "https://github.com/Tee6/Diplomarbeit_Klimakammer"
       },
       {
+        title: "Diese Website",
+        date: "März 2024 - Juni 2024",
+        description: `Privates Projekt. Entwicklung einer Website zur Präsentation meiner Projekte und meiner Person.
+        Die Website wurde mit React und Typescript entwickelt und diente zur Übung des Umgangs mit React und Store Management mittels "Zustand".
+        Das Design der Website wurde im vorhinein in Figma entworfen und soll den Stil des Glassmorphismus nachstellen.`,
+        picture: "src/assets/React.png",
+        link: "https://github.com/Tee6/HomePage",
+        learnMore: "https://www.interaction-design.org/literature/topics/glassmorphism"
+      },
+      {
         title: "Leslie Speaker",
         date: "März 2023 - Juni 2023",
         description: `Projektarbeit der 4ten Klasse. Entwicklung eines Klasse AB Verstärkers welcher einen 8" Lautsprecher betreibt. Zusätzlich
@@ -83,7 +95,7 @@ const useCVStore = create<CVStore>(() => ({
       {
         title: "Gravify",
         date: "Februar 2022 - Juni 2022",
-        description: `Projektarbeit der 3ten Klasse. Nachbau von Spotify bzw. eines MP3 Players.
+        description: `Projektarbeit der 3ten Klasse. Nachbau von Spotify bzw. eines MP3 Players mittels C# und WPF.
         Zu den Features gehören: Hinzufügen von Liedern, Erstellen und bearbeiten von Playlists,
         Abspielen von Liedern und Steuerung mittels 3 Tasten (Vorheriger Titel - Stop - Nächster Titel)`,
         picture: "src/assets/Gravify.png",

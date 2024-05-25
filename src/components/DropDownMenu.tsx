@@ -9,7 +9,7 @@ function DropDownMenu(){
     const navigate = useNavigate()
     return (
         <div className="dropdownmenu">
-            <button className='category-btn' onClick={() => globalStore.ToggleDropdown}>
+            <button className='category-btn' onClick={() => globalStore.ToggleDropdown()}>
                 {showDropdown ? 'Hide menu' : 'Show menu'}
             </button>
             {showDropdown && (

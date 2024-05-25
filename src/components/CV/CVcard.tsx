@@ -2,6 +2,7 @@ import "../../styles/cvcard.css"
 import {CVentry} from "../../stores/CVStore"
 
 function CVentryCard({entry}: {entry: CVentry}){
+    const isLearnMoreNotEmpty = entry.learnMore && entry.learnMore.trim() !== '';
     return(
         <div className="glassCard card cv-entry-card">
             <a className="cv-image" href={entry.link} target="_blank">
@@ -11,6 +12,11 @@ function CVentryCard({entry}: {entry: CVentry}){
                 <p className="cv-paragraph cv-title">{entry.title}</p>
                 <p className="cv-paragraph">{entry.date}</p>
                 <p className="cv-paragraph">{entry.description}</p>
+
+                {isLearnMoreNotEmpty && (
+                    <a href={entry.learnMore}>Mehr Erfahren</a>
+                )}
+
             </div>
         </div>
     )
