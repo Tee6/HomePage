@@ -18,10 +18,10 @@ export default function App() {
       </div>
       <div className='container'>
       <Routes>
-          <Route path="/HomePage" element={<Home />} />
-          <Route path="/CV" element={<CV />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Skills" element={<Skills />} />
+          <Route path="/HomePage/" element={<Home />} />
+          <Route path="/HomePage/CV" element={<CV />} />
+          <Route path="/HomePage/Projects" element={<Projects />} />
+          <Route path="/HomePage/Skills" element={<Skills />} />
           <Route element={<h1>Not found!</h1>} />
         </Routes>
       </div>
