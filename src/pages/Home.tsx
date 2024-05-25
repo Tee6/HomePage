@@ -4,12 +4,9 @@ import '../styles/home.css';
 function Home() {
   return (
     <>
-    <body>
-    
-      <div className='persona-card-div'>
+      <div className='persona-card-div home-card'>
         <PersonaCard/>
       </div>
-    </body>
     </>
   )
 }
