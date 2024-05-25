@@ -1,0 +1,7 @@
+.contact-me-btn{
+    background: linear-gradient(320deg, rgba(215,139,240,0.5761438364408263) 0%, rgba(95,12,101,1) 100%); 
+    padding: '10px';
+    border: 'none';
+    border-radius: '5px';
+    width: '100%';
+  }
