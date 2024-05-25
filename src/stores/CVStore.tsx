@@ -80,7 +80,7 @@ const useCVStore = create<CVStore>(() => ({
         wird mittels eines BLDC Motos eine Klangführung bewegt, welche einen "Phaser" Effekt erzielt. Der Motortreiber wurde ebenfalls entwickelt
         und mit einem Arduino gesteuert. Zur Steuerung der Klangführung und des Verstärkers gibt zu den am selbstentwickelten Gehäuse befestigten Potentiometern und Knöpfen
         außerdem noch ein Fußschalter, mit dem die Geschwindigkeit der Klangführung geändert oder ausgeschaltet werden kann.`,
-        picture: "src/assets/leslie.jpg",
+        picture: "./assets/leslie.jpg",
         link: "https://github.com/Tee6/LeslieSpeaker"
       },
       {
