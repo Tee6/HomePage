@@ -69,7 +69,7 @@ const useCVStore = create<CVStore>(() => ({
         description: `Privates Projekt. Entwicklung einer Website zur Präsentation meiner Projekte und meiner Person.
         Die Website wurde mit React und Typescript entwickelt und diente zur Übung des Umgangs mit React und Store Management mittels "Zustand".
         Das Design der Website wurde im vorhinein in Figma entworfen und soll den Stil des Glassmorphismus nachstellen.`,
-        picture: "src/assets/React.png",
+        picture: "./assets/React.png",
         link: "https://github.com/Tee6/HomePage",
         learnMore: "https://www.interaction-design.org/literature/topics/glassmorphism"
       },
@@ -80,7 +80,7 @@ const useCVStore = create<CVStore>(() => ({
         wird mittels eines BLDC Motos eine Klangführung bewegt, welche einen "Phaser" Effekt erzielt. Der Motortreiber wurde ebenfalls entwickelt
         und mit einem Arduino gesteuert. Zur Steuerung der Klangführung und des Verstärkers gibt zu den am selbstentwickelten Gehäuse befestigten Potentiometern und Knöpfen
         außerdem noch ein Fußschalter, mit dem die Geschwindigkeit der Klangführung geändert oder ausgeschaltet werden kann.`,
-        picture: "./assets/leslie.jpg",
+        picture: "./src/assets/Leslie.jpg",
         link: "https://github.com/Tee6/LeslieSpeaker"
       },
       {
