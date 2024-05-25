@@ -1,15 +1,12 @@
 import PersonaCard from '../components/PersonaCard';
-import DropdownMenu from '../components/DropDownMenu';
-import ContactBtn from '../components/ContactMe';
 import '../styles/home.css';
 
 function Home() {
   return (
     <>
     <body>
-    <div>
-      <DropdownMenu/>
-      <ContactBtn/>
+    
+      <div className='persona-card-div'>
         <PersonaCard/>
       </div>
     </body>

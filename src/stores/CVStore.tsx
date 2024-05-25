@@ -1,43 +1,94 @@
-import create from "zustand";
+import { create } from "zustand";
 
 export type CVentry = {
     title: string;
     date: string;
     description: string;
     picture: string;
+    link: string;
+  }
+  export type Projectentry = {
+    title: string;
+    date: string;
+    description: string;
+    picture: string;
+    link: string;
   }
   
 type CVStore = {
     CVentries: CVentry[];
+    ProjectEntries: Projectentry[];
 }
   
 const useCVStore = create<CVStore>(() => ({
     CVentries: [
-        {
-          title: "Software Developer",
-          date: "2020-2021",
-          description: "I worked as a software developer for a year",
-          picture: "data:image/png;base64,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"
+       {
+         title: "Student Software Developer bei WolfVision",
+         date: "Juli 2023",
+         description: "Sommerpraktikum im Software Development, Entwicklung einer HDMI-Switch-Matrix inklusive Website mit Vue3 und Backend mit ExpressJS. Außerdem programmierung des RaspberryPis zur Steuerung der HDMI Switches.",
+         picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wolfvision-logo.png/1200px-Wolfvision-logo.png",
+         link: "https://wolfvision.com"
+       },
+       {
+         title: "Facility Management Intern bei Omicron electronics",
+         date: "Juli 2022",
+         description: "Sommerpraktikum. Aufgaben bestanden aus: Verkabelung von Verteilern, Kabelverlegung, Verdrahten von Verlängerungskabeln, Lagerarbeiten, etc.",
+         picture: "https://www.schoolgames.eu/media/omicron_logo.jpg",
+         link:"https://www.omicronenergy.com"
+       },
+       {
+         title: "Manufacturing Intern bei Graf Elektronik GmbH",
+          date: "August 2021",
+          description: "Sommerpraktikum. Aufgaben bestanden aus: Löten, Testung und zussammenbau von Baugruppen, etc. ",
+          picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSbL9w4iLpx_zTozKoDS1nQ9sDCHmDiNl94Z25DfbWvQ&s",
+          link:"https://www.grafelektronik.com/"
         },
         {
-          title: "Frontend Developer Intern",
-          date: "Summer 2019",
-          description: "Interned as a frontend developer, gaining experience in HTML, CSS, and JavaScript",
-          picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7_yDMI9croXsLq1e0g13qunMVw7-Sw4AvnQ&usqp=CAU"
-        },
-        {
-          title: "Freelance Web Designer",
-          date: "2018-2019",
-          description: "Worked as a freelance web designer, creating responsive and visually appealing websites",
-          picture: "https://via.placeholder.com/150"
-        },
-        {
-          title: "Technical Support Specialist",
-          date: "2017-2018",
-          description: "Provided technical support for software products, troubleshooting issues for clients",
-          picture: "https://via.placeholder.com/150"
-        }
-      ]
+          title: "Schüler der HTL Rankweil",
+           date: "2019-2024",
+           description: "Zweig Elektronik und Technische Informatik. Abschluss mit Matura 2024 Note: 2.6",
+           picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/HTL_Rankweil_logo.png/250px-HTL_Rankweil_logo.png",
+           link:"https://www.htl-rankweil.at/"
+         },
+      ],
+    ProjectEntries: [
+      {
+        title: "Klimakammer",
+        date: "Juli 2023 - Juni 2024",
+        description: `Diplomarbeit der 5ten Klasse. 
+        Entwicklung einer Klimakammer zur Simulation von Umweltbedingungen durch Steuerung der Parameter: Sonne, Regen, Wind, ...
+        Meine Zuständigkeit war die Programmierung einer Website zur Steuerung der Klimakammer und die Kommunikation mit dem RaspberryPi.`,
+        picture: "src/assets/Klimakammer.jpg",
+        link: "https://github.com/Tee6/Diplomarbeit_Klimakammer"
+      },
+      {
+        title: "Leslie Speaker",
+        date: "März 2023 - Juni 2023",
+        description: `Projektarbeit der 4ten Klasse. Entwicklung eines Klasse AB Verstärkers welcher einen 8" Lautsprecher betreibt. Zusätzlich
+        wird mittels eines BLDC Motos eine Klangführung bewegt, welche einen "Phaser" Effekt erzielt. Der Motortreiber wurde ebenfalls entwickelt
+        und mit einem Arduino gesteuert. Zur Steuerung der Klangführung und des Verstärkers gibt zu den am selbstentwickelten Gehäuse befestigten Potentiometern und Knöpfen
+        außerdem noch ein Fußschalter, mit dem die Geschwindigkeit der Klangführung geändert oder ausgeschaltet werden kann.`,
+        picture: "src/assets/leslie.jpg",
+        link: "https://github.com/Tee6/LeslieSpeaker"
+      },
+      {
+        title: "Mini Powerbank",
+        date: "Oktober 2022 - November 2022",
+        description: `Projektarbeit der 4ten Klasse. Ziel des Projektes war es, eine Schaltung für eine Lade und Entlade-station für einzelne Li-Ion Zellen zu designen und umzusetzen.
+        Dazu wurden verschiedene ICs zur Regelung des Ladestroms verwendet. Zum einen um tiefenentladung und überladung als auch um Kurzschluss und Überspannungen zu verhindern.
+        Die Powerbank wird hauptsächlich für experimentelle Aufbauten verwendet. Dazu wurden Ausgangspins für jeweils 5V und 3.3V implementiert.`,
+        picture: "src/assets/Minipowerbank.png",
+        link: "https://github.com/Tee6/MiniPowerbank"
+      },
+      {
+        title: "Gravify",
+        date: "Februar 2022 - Juni 2022",
+        description: `Projektarbeit der 3ten Klasse. Nachbau von Spotify bzw. eines MP3 Players.
+        Zu den Features gehören: Hinzufügen von Liedern, Erstellen und bearbeiten von Playlists,
+        Abspielen von Liedern und Steuerung mittels 3 Tasten (Vorheriger Titel - Stop - Nächster Titel)`,
+        picture: "src/assets/Gravify.png",
+        link: "https://github.com/Tee6/Gravify"
+      },
+    ]
   }));
-
   export default useCVStore;
