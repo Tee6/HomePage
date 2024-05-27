@@ -1,6 +1,7 @@
 import { create } from "zustand";
 
 export type CVentry = {
+    id: number;
     title: string;
     date: string;
     description: string;
@@ -9,6 +10,7 @@ export type CVentry = {
     learnMore?: string;
   }
   export type Projectentry = {
+    id: number;
     title: string;
     date: string;
     description: string;
@@ -25,6 +27,7 @@ type CVStore = {
 const useCVStore = create<CVStore>(() => ({
     CVentries: [
        {
+        id: 1,
          title: "Student Software Developer bei WolfVision",
          date: "Juli 2023",
          description: "Sommerpraktikum im Software Development, Entwicklung einer HDMI-Switch-Matrix inklusive Website mit Vue3 und Backend mit ExpressJS. Außerdem programmierung des RaspberryPis zur Steuerung der HDMI Switches.",
@@ -32,6 +35,7 @@ const useCVStore = create<CVStore>(() => ({
          link: "https://wolfvision.com"
        },
        {
+        id: 2,
          title: "Facility Management Intern bei Omicron electronics",
          date: "Juli 2022",
          description: "Sommerpraktikum. Aufgaben bestanden aus: Verkabelung von Verteilern, Kabelverlegung, Verdrahten von Verlängerungskabeln, Lagerarbeiten, etc.",
@@ -39,6 +43,7 @@ const useCVStore = create<CVStore>(() => ({
          link:"https://www.omicronenergy.com"
        },
        {
+        id: 3,
          title: "Manufacturing Intern bei Graf Elektronik GmbH",
           date: "August 2021",
           description: "Sommerpraktikum. Aufgaben bestanden aus: Löten, Testung und zussammenbau von Baugruppen, etc. ",
@@ -46,6 +51,7 @@ const useCVStore = create<CVStore>(() => ({
           link:"https://www.grafelektronik.com/"
         },
         {
+          id: 4,
           title: "Schüler der HTL Rankweil",
            date: "2019-2024",
            description: "Zweig Elektronik und Technische Informatik. Abschluss mit Matura 2024 Note: 2.6",
@@ -55,6 +61,7 @@ const useCVStore = create<CVStore>(() => ({
       ],
     ProjectEntries: [
       {
+        id: 1,
         title: "Klimakammer",
         date: "Juli 2023 - Juni 2024",
         description: `Diplomarbeit der 5ten Klasse. 
@@ -64,6 +71,7 @@ const useCVStore = create<CVStore>(() => ({
         link: "https://github.com/Tee6/Diplomarbeit_Klimakammer"
       },
       {
+        id: 2,
         title: "Diese Website",
         date: "März 2024 - Juni 2024",
         description: `Privates Projekt. Entwicklung einer Website zur Präsentation meiner Projekte und meiner Person.
@@ -74,6 +82,7 @@ const useCVStore = create<CVStore>(() => ({
         learnMore: "https://www.interaction-design.org/literature/topics/glassmorphism"
       },
       {
+        id: 3,
         title: "Leslie Speaker",
         date: "März 2023 - Juni 2023",
         description: `Projektarbeit der 4ten Klasse. Entwicklung eines Klasse AB Verstärkers welcher einen 8" Lautsprecher betreibt. Zusätzlich
@@ -84,6 +93,7 @@ const useCVStore = create<CVStore>(() => ({
         link: "https://github.com/Tee6/LeslieSpeaker"
       },
       {
+        id: 4,
         title: "Mini Powerbank",
         date: "Oktober 2022 - November 2022",
         description: `Projektarbeit der 4ten Klasse. Ziel des Projektes war es, eine Schaltung für eine Lade und Entlade-station für einzelne Li-Ion Zellen zu designen und umzusetzen.
@@ -93,6 +103,7 @@ const useCVStore = create<CVStore>(() => ({
         link: "https://github.com/Tee6/MiniPowerbank"
       },
       {
+        id: 5,
         title: "Gravify",
         date: "Februar 2022 - Juni 2022",
         description: `Projektarbeit der 3ten Klasse. Nachbau von Spotify bzw. eines MP3 Players mittels C# und WPF.
