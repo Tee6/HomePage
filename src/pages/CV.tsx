@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import CVentryCard from '../components/CV/CVcard';
 import useCVStore from '../stores/CVStore';
 import '../styles/cvcard.css';
