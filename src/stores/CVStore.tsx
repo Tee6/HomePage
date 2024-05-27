@@ -99,7 +99,7 @@ const useCVStore = create<CVStore>(() => ({
         description: `Projektarbeit der 4ten Klasse. Ziel des Projektes war es, eine Schaltung für eine Lade und Entlade-station für einzelne Li-Ion Zellen zu designen und umzusetzen.
         Dazu wurden verschiedene ICs zur Regelung des Ladestroms verwendet. Zum einen um tiefenentladung und überladung als auch um Kurzschluss und Überspannungen zu verhindern.
         Die Powerbank wird hauptsächlich für experimentelle Aufbauten verwendet. Dazu wurden Ausgangspins für jeweils 5V und 3.3V implementiert.`,
-        picture: "assets/Minipowerbank.png",
+        picture: "src/assets/Minipowerbank.png",
         link: "https://github.com/Tee6/MiniPowerbank"
       },
       {
@@ -109,7 +109,7 @@ const useCVStore = create<CVStore>(() => ({
         description: `Projektarbeit der 3ten Klasse. Nachbau von Spotify bzw. eines MP3 Players mittels C# und WPF.
         Zu den Features gehören: Hinzufügen von Liedern, Erstellen und bearbeiten von Playlists,
         Abspielen von Liedern und Steuerung mittels 3 Tasten (Vorheriger Titel - Stop - Nächster Titel)`,
-        picture: "assets/Gravify.png",
+        picture: "src/assets/Gravify.png",
         link: "https://github.com/Tee6/Gravify"
       },
     ]
