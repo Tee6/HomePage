@@ -1,1 +1,0 @@
-import{r as o,j as r}from"./index-zgQ-w3Wb.js";import{u as n,C as i}from"./CVStore-lAaWAT8r.js";function j(){const s=n(e=>e.ProjectEntries),t=o.useMemo(()=>s.map(e=>r.jsx(i,{entry:e},e.id)),[s]);return r.jsxs("section",{children:[r.jsx("h1",{children:"Projekte"}),r.jsx("div",{className:"cv-entries-div",children:t})]})}export{j as default};
