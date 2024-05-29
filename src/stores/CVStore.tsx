@@ -67,7 +67,7 @@ const useCVStore = create<CVStore>(() => ({
         description: `Diplomarbeit der 5ten Klasse. 
         Entwicklung einer Klimakammer zur Simulation von Umweltbedingungen durch Steuerung der Parameter: Sonne, Regen, Wind, ...
         Meine Zuständigkeit war die Programmierung einer Website zur Steuerung der Klimakammer und die Kommunikation mit dem RaspberryPi.`,
-        picture: "assets/Klimakammer.jpg",
+        picture: "./src/assets/Klimakammer.jpg",
         link: "https://github.com/Tee6/Diplomarbeit_Klimakammer"
       },
       {
@@ -77,7 +77,7 @@ const useCVStore = create<CVStore>(() => ({
         description: `Privates Projekt. Entwicklung einer Website zur Präsentation meiner Projekte und meiner Person.
         Die Website wurde mit React und Typescript entwickelt und diente zur Übung des Umgangs mit React und Store Management mittels "Zustand".
         Das Design der Website wurde im vorhinein in Figma entworfen und soll den Stil des Glassmorphismus nachstellen.`,
-        picture: "assets/React.png",
+        picture: "./src/assets/React.png",
         link: "https://github.com/Tee6/HomePage",
         learnMore: "https://www.interaction-design.org/literature/topics/glassmorphism"
       },
@@ -89,7 +89,7 @@ const useCVStore = create<CVStore>(() => ({
         wird mittels eines BLDC Motos eine Klangführung bewegt, welche einen "Phaser" Effekt erzielt. Der Motortreiber wurde ebenfalls entwickelt
         und mit einem Arduino gesteuert. Zur Steuerung der Klangführung und des Verstärkers gibt zu den am selbstentwickelten Gehäuse befestigten Potentiometern und Knöpfen
         außerdem noch ein Fußschalter, mit dem die Geschwindigkeit der Klangführung geändert oder ausgeschaltet werden kann.`,
-        picture: "assets/Leslie.jpg",
+        picture: "./src/assets/Leslie.jpg",
         link: "https://github.com/Tee6/LeslieSpeaker"
       },
       {
@@ -99,7 +99,7 @@ const useCVStore = create<CVStore>(() => ({
         description: `Projektarbeit der 4ten Klasse. Ziel des Projektes war es, eine Schaltung für eine Lade und Entlade-station für einzelne Li-Ion Zellen zu designen und umzusetzen.
         Dazu wurden verschiedene ICs zur Regelung des Ladestroms verwendet. Zum einen um tiefenentladung und überladung als auch um Kurzschluss und Überspannungen zu verhindern.
         Die Powerbank wird hauptsächlich für experimentelle Aufbauten verwendet. Dazu wurden Ausgangspins für jeweils 5V und 3.3V implementiert.`,
-        picture: "src/assets/Minipowerbank.png",
+        picture: "./src/assets/Minipowerbank.png",
         link: "https://github.com/Tee6/MiniPowerbank"
       },
       {
@@ -109,7 +109,7 @@ const useCVStore = create<CVStore>(() => ({
         description: `Projektarbeit der 3ten Klasse. Nachbau von Spotify bzw. eines MP3 Players mittels C# und WPF.
         Zu den Features gehören: Hinzufügen von Liedern, Erstellen und bearbeiten von Playlists,
         Abspielen von Liedern und Steuerung mittels 3 Tasten (Vorheriger Titel - Stop - Nächster Titel)`,
-        picture: "src/assets/Gravify.png",
+        picture: "./src/assets/Gravify.png",
         link: "https://github.com/Tee6/Gravify"
       },
     ]
