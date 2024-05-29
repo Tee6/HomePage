@@ -3,12 +3,10 @@ import '../styles/home.css';
 
 function Home() {
   return (
-    <>
-      <div className='persona-card-div home-card'>
-        <PersonaCard/>
-      </div>
-    </>
-  )
+    <div className='home-card'>
+      <PersonaCard />
+    </div>
+  );
 }
 
-export default Home
+export default Home;

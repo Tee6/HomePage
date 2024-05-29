@@ -1,9 +1,7 @@
 function Skills() {
   return (
-    <>
     <body>
     </body>
-    </>
   )
 }
 

@@ -4,21 +4,21 @@ import useCVStore from '../stores/CVStore';
 import '../styles/cvcard.css';
 
 function Projects() {
-  const ProjectEntries = useCVStore(CVentries => CVentries.ProjectEntries);
+  const projectEntries = useCVStore(state => state.ProjectEntries);
 
   const renderedProjectEntries = useMemo(() => {
-    return ProjectEntries.map(entry => (
+    return projectEntries.map(entry => (
       <CVentryCard key={entry.id} entry={entry} />
     ));
-  }, [ProjectEntries]);
+  }, [projectEntries]);
 
   return (
-    <>
+    <section>
       <h1>Projekte</h1>
       <div className='cv-entries-div'>
         {renderedProjectEntries}
       </div>
-    </>
+    </section>
   );
 }
 

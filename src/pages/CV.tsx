@@ -5,7 +5,8 @@ import useCVStore from '../stores/CVStore';
 import '../styles/cvcard.css';
 
 function CV() {
-  const CVentries = useCVStore(CVentries => CVentries.CVentries)
+  const CVentries = useCVStore(state => state.CVentries);
+
   const renderedCVEntries = useMemo(() => {
     return CVentries.map(entry => (
       <CVentryCard key={entry.id} entry={entry} />
@@ -13,13 +14,13 @@ function CV() {
   }, [CVentries]);
 
   return (
-    <>
+    <section>
       <h1>Arbeitserfahrung</h1>
       <div className='cv-entries-div'>
         {renderedCVEntries}
       </div>
-    </>
+    </section>
   );
 }
 
-export default CV
+export default CV;
