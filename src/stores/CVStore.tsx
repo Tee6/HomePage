@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import Bild from '../assets/Gravify.png';
 
 export type CVentry = {
     id: number;
@@ -109,7 +110,7 @@ const useCVStore = create<CVStore>(() => ({
         description: `Projektarbeit der 3ten Klasse. Nachbau von Spotify bzw. eines MP3 Players mittels C# und WPF.
         Zu den Features gehören: Hinzufügen von Liedern, Erstellen und bearbeiten von Playlists,
         Abspielen von Liedern und Steuerung mittels 3 Tasten (Vorheriger Titel - Stop - Nächster Titel)`,
-        picture: "./src/assets/Gravify.png",
+        picture: Bild,
         link: "https://github.com/Tee6/Gravify"
       },
     ]

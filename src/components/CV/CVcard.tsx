@@ -1,6 +1,7 @@
 import "../../styles/cvcard.css";
 import { CVentry } from "../../stores/CVStore";
 
+
 function CVentryCard({ entry }: { entry: CVentry }) {
   const { link, picture, title, date, description, learnMore } = entry;
   const isLearnMoreNotEmpty = learnMore && learnMore.trim() !== '';
