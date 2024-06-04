@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Portrait from "src/assets/Portrait.png"
+import Portrait from "../assets/Portrait.png";
 import {
   faLinkedin,
   faGithub,
