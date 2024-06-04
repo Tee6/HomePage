@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Portrait from "src/assets/Portrait.png"
 import {
   faLinkedin,
   faGithub,
@@ -35,7 +36,7 @@ const GlassCard = () => {
     <div className="glassCard persona-card">
       <div className="card">
         <div className="card-image">
-          <img className="portrait-img" src="src/assets/Portrait.png" alt="Portrait" />
+          <img className="portrait-img" src={Portrait} alt="Portrait" />
         </div>
         <div className="card-content">
           <h3 className="name-heading">Niko Leimegger</h3>
