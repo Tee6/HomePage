@@ -1,0 +1,1 @@
+import{r as o,j as r}from"./index-qk0134IL.js";import{u as n,C as i}from"./CVStore-itZ9GPie.js";function j(){const s=n(e=>e.ProjectEntries),t=o.useMemo(()=>s.map(e=>r.jsx(i,{entry:e},e.id)),[s]);return r.jsxs("section",{children:[r.jsx("h1",{children:"Projekte"}),r.jsx("div",{className:"cv-entries-div",children:t})]})}export{j as default};
