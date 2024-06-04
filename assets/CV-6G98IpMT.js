@@ -1,0 +1,1 @@
+import{r as n,j as r}from"./index-swlyZKyn.js";import{u as i,C as o}from"./CVStore-VWgrzN-C.js";function d(){const s=i(e=>e.CVentries),t=n.useMemo(()=>s.map(e=>r.jsx(o,{entry:e},e.id)),[s]);return r.jsxs("section",{children:[r.jsx("h1",{children:"Arbeitserfahrung"}),r.jsx("div",{className:"cv-entries-div",children:t})]})}export{d as default};
