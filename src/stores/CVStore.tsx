@@ -4,6 +4,22 @@ import Leslie from '../assets/Leslie.jpg';
 import MiniPowerbank from '../assets/Minipowerbank.png';
 import Klimakammer from '../assets/Klimakammer.jpg';
 import ReactLogo from '../assets/React.png';
+import expressJSLogo from '../assets/expressjs.png';
+import csharpLogo from '../assets/csharp.png';
+import arduinoLogo from '../assets/Arduino_Logo.png'
+import cLogo from '../assets/CLogo.png'
+
+import {
+  faFigma,
+  faGitAlt,
+  faJs,
+  faPython,
+  faRaspberryPi,
+  faReact,
+  faVuejs,
+  IconDefinition,
+  faHtml5
+} from "@fortawesome/free-brands-svg-icons";
 
 export type CVentry = {
     id: number;
@@ -23,10 +39,18 @@ export type CVentry = {
     link: string;
     learnMore?: string;
   }
+  export type Skillentry = {
+    id: number;
+    title: string;
+    description: string;
+    icon: IconDefinition | string;
+    level: number;
+  }
   
 type CVStore = {
     CVentries: CVentry[];
     ProjectEntries: Projectentry[];
+    SkillEntries: Skillentry[];
 }
   
 const useCVStore = create<CVStore>(() => ({
@@ -117,6 +141,92 @@ const useCVStore = create<CVStore>(() => ({
         picture: Gravify,
         link: "https://github.com/Tee6/Gravify"
       },
+    ],
+    SkillEntries: [
+      {
+        id: 1,
+        title: "React",
+        description: `Mit dieser Website sammelte ich Erfahrung mit React und Zustand.`,
+        icon: faReact,
+        level: 4
+      },
+      {
+        id: 2,
+        title: "Vue",
+        description: `Durch mein Praktikum bei WolfVision und anschließender Diplomarbeit sammelte ich wichtige Erfahrung mit Vue3 und Pinia.`,
+        icon: faVuejs,
+        level: 4
+      },
+      {
+        id: 3,
+        title: "Python",
+        description: `Durch RaspberryPI programmierung und das Wahlpflichtfach "KI" habe ich einige Projekte mit Python entwickelt.`,
+        icon: faPython,
+        level: 4
+      },
+      {
+        id: 4,
+        title: "C#",
+        description: `Durch die Entwicklung von Gravify sammelte ich Erfahrung mit C# und WPF.`,
+        icon: csharpLogo,
+        level: 4
+      },
+      {
+        id: 5,
+        title: "HTML/CSS/JS",
+        description: `Durch die Entwicklung mehrerer Websites und dem CodeBaseCamp sammelte ich Erfahrung mit HTML, CSS und JS.`,
+        icon: faHtml5,
+        level: 4
+      },
+      {
+        id: 6,
+        title: "ExpressJS",
+        description: `Durch mein Praktikum bei WolfVision sammelte ich Erfahrung mit ExpressJS.`,
+        icon: expressJSLogo,
+        level: 4
+      },
+      {
+        id: 7,
+        title: "Git",
+        description: `Durch die Entwicklung dieser Website und die Arbeit an meinen Projekten sammelte ich Erfahrung mit Git.`,
+        icon: faGitAlt,
+        level: 4
+      },
+      {
+        id: 8,
+        title: "Figma",
+        description: `Zur Entwicklung dieser Website habe ich das Design im vorhinein in Figma entworfen.`,
+        icon: faFigma,
+        level: 4
+      },
+      {
+        id: 9,
+        title: "Javascript/Typescript",
+        description: `Zur Entwicklung dieser Website, der Steuerwebsite meiner Diplomarbeit und des HDMI Switches habe ich Typescript verwendet.`,
+        icon: faJs,
+        level: 4
+      },
+      {
+        id: 10,
+        title: "Arduino",
+        description: `Durch die Entwicklung des Leslie Speakers sammelte ich Erfahrung mit Arduino.`,
+        icon: arduinoLogo,
+        level: 4
+      },
+      {
+        id: 11,
+        title: "RaspberryPi",
+        description: `Eingesetzt in Projekten wie der Klimakammer, dem HDMI Switch bei WolfVision und Smart Mirror`,
+        icon: faRaspberryPi,
+        level: 4
+      },
+      {
+        id: 12,
+        title: "C",
+        description: `Erfahrung durch Projekte wie den Leslie Speaker und den Digitaltechnik Unterricht in der HTL `,
+        icon: cLogo,
+        level: 4
+      }
     ]
   }));
   export default useCVStore;
