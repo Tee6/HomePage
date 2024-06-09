@@ -3,13 +3,7 @@ import '../styles/contactbtn.css';
 
 const ContactMe: React.FC = () => {
     return (
-        <div
-            style={{
-                position: 'fixed',
-                top: '20px',
-                right: '10px',
-                width: '10%',
-            }}>
+        <div className='cnt-div'>
             <button className='contact-me-btn'>
                 Contact Me
             </button>

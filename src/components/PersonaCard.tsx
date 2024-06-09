@@ -46,7 +46,7 @@ const GlassCard = () => {
             <li>Favourite Framework: Vuejs</li>
             <li>Currently working at McDonalds</li>
           </ul>
-          <div className="card-social-media">
+          <div className="card-social-media" style={{ display: "flex" }}>
             {socialMediaLinks.map((link, index) => (
               <a key={index} className="social-media" href={link.href}>
                 <FontAwesomeIcon icon={link.icon} />

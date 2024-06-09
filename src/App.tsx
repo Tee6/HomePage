@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className='top-btns'>
+        <div className='top-btns' style={{ zIndex: 1 }}>
           <DropdownMenu />
           <ContactBtn />
         </div>

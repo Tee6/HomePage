@@ -1,4 +1,5 @@
-.name-heading{
+@media (min-width: 600px) {
+  .name-heading{
     font-family: 'Roboto Mono', monospace;
     font-size: 60px;
     font-weight:900;
@@ -47,3 +48,59 @@
     margin-right: 20px;
     font-size: 40px;
   }
+}
+
+@media (max-width: 600px) {
+  .name-heading{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+    font-weight:900;
+    color: #FFF;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+.persona-card-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.portrait-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+  }
+  
+  .persona-card{
+    min-width: 1080px;
+    min-height: 450px;
+  }
+  
+  .card-image{
+    display: flex;
+    justify-content: center;
+  }
+
+  .fun-facts{
+    padding-left: 16px;
+  }
+  
+  .card-social-media{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-column-gap: 1em;
+    justify-content: center;
+  }
+  
+  .social-media{
+    font-size: 40px;
+  }
+
+  .home-card{
+    position: relative;
+    top: 90px;
+  }
+}
+
