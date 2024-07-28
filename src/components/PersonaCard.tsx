@@ -44,7 +44,7 @@ const GlassCard = () => {
             <li>Born on 08.11.2004</li>
             <li>Living in Austria</li>
             <li>Favourite Framework: Vuejs</li>
-            <li>Currently working at McDonalds</li>
+            <li>Currently not Working</li>
           </ul>
           <div className="card-social-media" style={{ display: "flex" }}>
             {socialMediaLinks.map((link, index) => (
