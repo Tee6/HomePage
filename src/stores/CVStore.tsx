@@ -8,6 +8,7 @@ import expressJSLogo from '../assets/expressjs.png';
 import csharpLogo from '../assets/csharp.png';
 import arduinoLogo from '../assets/Arduino_Logo.png'
 import cLogo from '../assets/CLogo.png'
+import FlopodoroLogo from '../assets/flopodoro.png'
 
 import {
   faFigma,
@@ -89,6 +90,16 @@ const useCVStore = create<CVStore>(() => ({
          },
       ],
     ProjectEntries: [
+      {
+        id: 0,
+        title: "Flopodoro",
+        date: "Juni 2024 - Juli 2024",
+        description: `Privates Projekt.
+         Entwicklung eines Pomodoro Timers mit zusätzlicher Stoppuhrfunktion für die Arbeit und Schule. 
+         Flopodoro wurde als Desktop App mit Electron und Vue realisiert. Die App kann einfach über mein Github heruntergeladen werden.`,
+        picture: FlopodoroLogo,
+        link: "https://github.com/Tee6/Flopodoro"
+      },
       {
         id: 1,
         title: "Klimakammer",
